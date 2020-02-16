@@ -9,6 +9,7 @@
 import UIKit
 import WebKit
 
+
 class ViewController: UIViewController {
     @IBOutlet weak var myTextField: UITextField!
     @IBOutlet weak var textView: UITextView!
@@ -43,9 +44,10 @@ class ViewController: UIViewController {
         task.resume()
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let img = UIImage(named:"weather.jpg")
+        let img = UIImage(named:"weather.jpg") //adding image
         view.backgroundColor = UIColor(patternImage: img!)
     }
 }
