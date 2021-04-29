@@ -21,9 +21,9 @@ class ViewController: UIViewController {
             if error == nil{
                 if let unwrappedData = data{
                     let dataString = String(data: unwrappedData, encoding: .utf8)
-                    if dataString!.contains("city not found"){
+                    if dataString!.contains("city not found....."){
                         DispatchQueue.main.async {
-                            self.textView.text = "Invalid city name"
+                            self.textView.text = "Invalid city name...."
                         }
                     }else{
                         do{
